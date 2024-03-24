@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Descubra o Número</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <main class="container-principal">
+        <h1 class="titulo">Descubra <span>o número</span></h1>
+        <div class="numero-sorteado">
+            <span id="mostrarNumero">??</span>
+        </div>
+        <form class="form">
+            <p class="numero">Apostar: <input type="number" id="inNumber" class="in-number" min="0" max="100" step="1" required></p>
+            <input type="submit" value="Verificar" class="verificar" id="botaoVerificar">
+        </form>
+        <div class="dicasContainer">
+            <h3 class="dica">Dicas:</h3>
+            <p>É um número entre 0 e 100</p>
+            <p class="pDica">---</p>
+            <p class="pDica2">---</p>
+            <p class="pDica3">---</p>
+            <p class="pDica4">---</p>
+        </div>
+        <div class="contagens">
+            <p id="contagem1">Chances: <span id="numeroChances">5</span></p>
+            <p>Erros: <span id="numeroErros">---</span></p>
+        </div>
+        <section class="parabens">
+            <h2>Parabéns!</h2>
+            <p>Você acertou o número!</p>
+            <button class="verificar" id="reiniciar">Reiniciar</button>
+        </section>
+        <section class="perdeu">
+            <h2>Ah não...</h2>
+            <p>Parece que suas chances acabaram.</p>
+            <button class="verificar" id="restart">Reiniciar</button>
+        </section>
+    </main>
+    <section class="aviso">
+        <h2>Ops...</h2>
+        <p>Parece que você digitou um número repetido, tente novamente com outro número.</p>
+        <button class="verificar" id="tentarNovamente">Continuar</button>
+    </section>
+
+    <div class="regras">
+        <button id="botaoRegras">Regras</button>
+    </div>
+    <aside class="caixaRegras displayNone">
+        <h2>Regras</h2>
+        <ul>
+            <li>Ao inicar, será gerado um número aleatório</li>
+            <li>Você tem 5 chances para acertar o número</li>
+            <li>A cada erro será dada uma nova dica</li>
+            <li>Cada dica irá se aproximar cada vez mais do número gerado</li>
+            <li>Ao perder as 5 chances você perde o jogo, mas poderá reiniciar se quiser.</li>
+            <li>Ao reinicar, o jogo irá gerar um novo número aleatório</li>
+        </ul>
+        <p><a href="https://www.linkedin.com/in/jo%C3%A3o-victor-furlan-braga-2b54a7282/" target="_blank" class="linkedin">Linkedin do criador</a></p>
+    </aside>
+    <script src="script.js"></script>
+</body>
+</html>

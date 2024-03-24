@@ -1,0 +1,343 @@
+/* CSS Reset */
+h1, h2, h3, form, p, input {
+    padding: 0;
+    margin: 0;
+}
+
+/* Body */
+body {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(32, 1, 88);
+    font-family: 'Poppins', sans-serif;
+    color: white;
+    font-weight: 600px;
+}
+
+/* Container */
+.container-principal {
+    background: linear-gradient(.40turn, rgb(236, 93, 255), rgb(98, 0, 255));
+    border-radius: 10px;
+    padding: 30px 50px;
+    box-shadow: 10px 10px black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Titulo */
+.titulo {
+    color: rgb(255, 255, 255);
+    font-size: 3rem;
+    text-transform: uppercase;
+    text-align: center;
+    letter-spacing: 10px;
+}
+.titulo span {
+    display: block;
+    font-size: 2.2rem;
+    text-transform: lowercase;
+    font-weight: 300;
+    text-align: center;
+    margin-bottom: 50px;
+    margin-top: -15px;
+    border-bottom: 3px solid white;
+}
+
+/* Div Numero */
+.numero-sorteado{
+    width: 100px;
+    height: 100px;
+    background-color: rgba(31, 1, 88, 0.705);
+    margin-bottom: 50px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.numero-sorteado span {
+    font-size: 3rem;
+}
+
+/* Formulário */
+.form {
+    display: flex;
+    flex-direction: column;
+}
+.numero {
+    font-weight: 600;
+    font-size: 2rem;
+    margin-bottom: 20px;
+    width: 100%;
+    display: flex;
+}
+.in-number::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+}
+.in-number {
+    font-size: 2rem;
+    color: white;
+    font-family: 'Poppins';
+    font-weight: 500;
+    background-color: rgba(255, 255, 255, 0.295);
+    border: none;
+    margin-left: 10px;
+    border-radius: 10px;
+    padding-left: 10px;
+}
+.in-number:focus {
+    border: none;
+    outline: 0;
+}
+.verificar {
+    font-size: 1.5rem;
+    font-family: 'Poppins';
+    color: white;
+    padding: 5px 80px;
+    background-color: rgba(31, 1, 88, 0.705);
+    transition: 0.5s;
+    margin-bottom: 30px;
+    font-weight: 600;
+    outline: none;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+}
+.verificar:hover {
+    transition: 0.5s;
+    background-color: rgba(31, 1, 88, 0.253);
+}
+
+/* Contagem */
+.contagens {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    justify-content: space-around;
+    width: 100%;
+    font-size: 1.8rem;
+    color: white;
+    font-weight: 600;
+}
+.contagens p {
+    background-color: rgba(255, 255, 255, 0.11);
+    padding: 5px 10px;
+    border-radius: 10px;
+}
+#contagem1 {
+    max-width: max-content;
+}
+/* Dica */
+.dica {
+    font-size: 1.6rem;
+    margin-bottom: 5px;
+    font-weight: 600;
+    color: white;
+    max-width: 25ch;
+    text-align: center;
+}
+.dicasContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.dicasContainer p {
+    font-size: 1.3rem;
+}
+/* Aviso */
+.aviso {
+    position: absolute;
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    background: linear-gradient(.40turn, rgb(76, 4, 158),rgb(98, 0, 255));
+    padding: 20px 40px;
+    border-radius: 10px;
+    animation-name: downslide;
+    animation-duration: 0.5s;
+}
+.aviso p {
+    max-width: 30ch;
+    margin: 10px 0 10px 0;
+    text-align: center;
+}
+.aviso button {
+    margin-bottom: 0;
+}
+
+/* Parabéns */
+.parabens {
+    position: absolute;
+    top: 10px;
+    background: linear-gradient(.40turn, rgb(236, 93, 255), rgb(98, 0, 255));
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    padding: 10px 40px;
+    border-radius: 10px;
+    animation-name: downslide;
+    animation-duration: 0.5s;
+}
+.parabens button {
+    margin-bottom: 0;
+}
+
+/* Perdeu */
+.perdeu {
+    position: absolute;
+    top: 10px;
+    background: linear-gradient(.40turn, rgb(236, 93, 255), rgb(98, 0, 255));
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    padding: 10px 40px;
+    border-radius: 10px;
+    animation-name: downslide;
+    animation-duration: 0.5s;
+}
+.perdeu button {
+    margin-bottom: 0;
+}
+
+/* Active */
+.activeFlex {
+    display: flex;
+}
+.displayNone {
+    display: none;
+}
+
+/* Regras */
+.regras {
+    position: absolute;
+    bottom: 10px;
+    right: 20px;
+
+}
+.regras button {
+    cursor: pointer;
+    background: linear-gradient(.40turn, rgb(236, 93, 255), rgb(98, 0, 255));
+    outline: none;
+    border: none;
+    font-size: 1.6rem;
+    font-family: 'Poppins';
+    color: white;
+    padding: 0px 20px;
+    border-radius: 10px;
+}
+.caixaRegras {
+    position: absolute;
+    right: 10px;
+    bottom: 60px;
+    background: linear-gradient(.40turn, rgb(76, 4, 158),rgb(98, 0, 255));
+    padding: 10px 20px;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 10px;
+    animation-name: leftslide;
+    animation-duration: 0.5s;
+}
+.caixaRegras h2 {
+    border-bottom: 2px solid white;
+}
+.caixaRegras ul li {
+    max-width: 25ch;
+    margin-bottom: 5px;
+}
+.linkedin {
+    text-decoration: none;
+    color: white;
+}
+.linkedin:hover {
+    color: rgba(185, 158, 216, 0.534);
+}
+
+@keyframes leftslide {
+    from {
+        opacity: 0;
+        transform: translate3d(10px, 0, 0);
+      }
+    
+    to {
+        opacity: 1;
+        transform: translate3d(0, 0, 0);
+    }
+}
+
+@keyframes downslide {
+    from {
+        opacity: 0;
+        transform: translate3d(0, -20px, 0);
+      }
+    
+    to {
+        opacity: 1;
+        transform: translate3d(0, 0, 0);
+    }
+}
+
+/* Media queries */
+@media (max-width: 500px) {
+    .titulo {
+        font-size: 2rem;
+    }
+    .titulo span {
+        font-size: 1.6rem;
+        margin-top: -5px;
+        margin-bottom: 25px;
+    }
+    .numero {
+        font-size: 1.5rem;
+        align-items: center;
+    }
+    .numero-sorteado {
+        margin-bottom: 25px;
+    }
+    .inNumero {
+        font-size: 1.5rem;
+    }
+    .verificar {
+        font-size: 1.2rem;
+        margin-bottom: 10px;
+    }
+    .dica {
+        font-size: 1.3rem;
+    }
+    .dicasContainer p {
+        font-size: 1rem;
+    }
+    .contagens {
+        font-size: 1.4rem;
+    }
+}
+@media (max-width: 400px) {
+    .container-principal {
+        box-shadow: none;
+        padding: 20px 30px;
+        position: relative;
+    }
+    body {
+        margin: 0;
+        flex-direction: column;
+    }
+    .regras {
+        margin-top: 10px;
+        position: initial;
+    }
+    .caixaRegras {
+        top: 170px;
+        right: initial;
+        bottom: initial;
+    }
+    .perdeu {
+        top: 240px;
+    }
+    .parabens {
+        top: 240px;
+    }
+}
